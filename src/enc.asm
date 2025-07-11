@@ -103,5 +103,4 @@ section .text
       cmp rcx, 0
       jne toencloop
 
-    pop rsi
     jmp out
