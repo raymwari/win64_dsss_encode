@@ -1,13 +1,13 @@
 section .data
   file_name db "in.mp3", 0
   OF_PROMPT equ 0x00002000
-  MAX_JPEG_SIZE equ 966656
+  MAX_FILE_SIZE equ 966656
   MAX_BIN_SIZE equ 9666560
   bin_f db "out.mp3", 0
 
 section .bss
   ofstruct resb 136
-  file_read_buf resb MAX_JPEG_SIZE
+  file_read_buf resb MAX_FILE_SIZE
   read resb 12
   bin_buf resb MAX_BIN_SIZE
 
