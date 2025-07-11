@@ -14,8 +14,7 @@ section .bss
 section .text
   extern OpenFile, ExitProcess
   extern ecode, enc
-  extern ReadFile, sig
-  extern WriteFile
+  extern ReadFile, WriteFile
   global _main
   _main:
     push rbp
