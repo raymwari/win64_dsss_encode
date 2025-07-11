@@ -19,7 +19,7 @@ Encodes text stored in `embed.txt` into an audio file `in.mp3` and outputs a fil
 Uses a `seed of 0x2000` on a `spread factor 5`. Your welcome to test fit different constant values in the generator and see if you can get an even better spread or/and persistence across different compression mechanisms. Maybe try an even higher spread factor.
 
 ## Important:
-Code is not format locked, maybe be used on a variety of file types including `.wav`, `.mp4`, `.jpg` (not recommended) and more
+Code is not format locked, considering it's just a generic layer over raw bits, and this means it may be used on a variety of file types including `.wav`, `.mp4`, `.jpg` (not recommended) and more
 
 ## Next steps:
 Investigate github's wierd alignment on `ecodes.asm`. <br>
