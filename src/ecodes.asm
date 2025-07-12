@@ -3,7 +3,7 @@ section .bss
   written resb 12
 
 section .data
-  msg db "complete!", 0
+	msg db "complete!", 0
 	msg_len equ  $ - msg
 
 section .text
