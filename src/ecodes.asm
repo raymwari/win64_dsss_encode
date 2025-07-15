@@ -29,6 +29,7 @@ section .text
 		call GetLastError
 		mov ecx, 10      
 		lea rsi, [err_code + 12] 
+
 		convert_loop:
 			dec rsi
 			xor rdx, rdx
