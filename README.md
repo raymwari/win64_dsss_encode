@@ -11,7 +11,7 @@ https://www.godevtool.com
 ## Error codes (check stderr):
 https://learn.microsoft.com/en-us/windows/win32/debug/system-error-codes--0-499-
 
-## Usage
+## Usage:
 Encodes text stored in `embed.txt` into an audio file `in.mp3` and outputs a file `out.mp3`.
 
 ## About the pseudo random noise generator:
