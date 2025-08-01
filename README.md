@@ -1,10 +1,10 @@
 # win64_dsss_encode
 A direct sequence spread spectrum steganography inspired implementation (deterministic encoding & recovery)
 
-# Resources:
+## Resources:
 https://youtu.be/-1mxYWvfVWQ?si=ePddoL3WGzPw7eEy
 
-# Prerequisites:
+## Prerequisites:
 https://www.nasm.us  <br>
 https://www.godevtool.com
 
