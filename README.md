@@ -8,7 +8,6 @@ https://youtu.be/-1mxYWvfVWQ?si=ePddoL3WGzPw7eEy
 https://www.nasm.us  <br>
 https://www.godevtool.com
 
-# More
 ## Error codes (check stderr):
 https://learn.microsoft.com/en-us/windows/win32/debug/system-error-codes--0-499-
 
