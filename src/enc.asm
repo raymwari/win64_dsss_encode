@@ -1,7 +1,6 @@
 section .data
   spread_factor equ 15
   seed equ 0x2000
-  ; modulus equ 656656
   m_const equ 101
   a_const equ 17 
   efile_name db "embed.txt", 0
@@ -20,7 +19,6 @@ section .text
   extern ExitProcess, GetStdHandle, WriteConsoleA
   extern OpenFile, ReadFile, CloseHandle
   extern bin_buf, out, ecode, read
-  global _main
   enc:
     mov rcx, efile_name
     lea rdx, efile_buf
@@ -77,6 +75,7 @@ section .text
     mov r12, bin_buf
     toencloop:
       mov r9, spread_factor
+
       modulate:
         mov r10, seed
         add r10, r11
