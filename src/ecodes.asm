@@ -31,14 +31,14 @@ section .text
       lea rsi, [err_code + 12] 
 
       convert_loop:
-	dec rsi
-	xor rdx, rdx
-	mov rax, rax     
-	div rcx            
-	add dl, '0'          
-	mov [rsi], dl       
-	test rax, rax
-	jnz convert_loop
+		dec rsi
+		xor rdx, rdx
+		mov rax, rax     
+		div rcx            
+		add dl, '0'          
+		mov [rsi], dl       
+		test rax, rax
+		jnz convert_loop
 
 	mov ecx, -11
 	call GetStdHandle
@@ -52,3 +52,4 @@ section .text
 
 	xor ecx, ecx
 	call ExitProcess
+
