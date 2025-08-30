@@ -67,6 +67,7 @@ section .text
       add rsi, rdx
       mov rdi, output
       mov rcx, file_name_max
+
       exto:
         mov byte al, [rsi]
         cmp byte al, 0x0D
@@ -116,6 +117,7 @@ section .text
     binloop:
       mov byte al, [rdi]
       mov rcx, 8  
+
       nextbit:
         test rcx, rcx
         jz nextbyte
@@ -153,6 +155,7 @@ section .text
       mov r8, bin_buf
       mov r9, file_read_buf
       mov rdx, [read] 
+
       unbinloop:
         mov al, 0
         mov rcx, 8
@@ -192,3 +195,4 @@ section .text
       test rax, rax
       jz ecode    
       jmp end
+
