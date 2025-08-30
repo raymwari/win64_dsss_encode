@@ -25,6 +25,7 @@ section .text
     mov r8, OF_PROMPT
     call OpenFile
     mov rsi, rax
+
     mov rcx, rsi
     lea rdx, secret
     mov r8, secret_cap
@@ -32,6 +33,7 @@ section .text
     mov byte [rsp + 32], 0
     call ReadFile
     test rax, rax 
+
     jz ecode
     mov rcx, rsi
     call CloseHandle
@@ -103,3 +105,4 @@ section .text
       jne toencloop
 
     jmp out
+
